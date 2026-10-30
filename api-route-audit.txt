@@ -1,0 +1,992 @@
+﻿
+
+
+  GET|HEAD        api/api-clients ................................................. Api\Phase10ApiClientController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/api-clients ................................................. Api\Phase10ApiClientController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/companies .......................................... companies.index ΓÇ║ Api\CompanyController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/companies .......................................... companies.store ΓÇ║ Api\CompanyController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/companies/{company} .................................. companies.show ΓÇ║ Api\CompanyController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/companies/{company} .............................. companies.update ΓÇ║ Api\CompanyController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/companies/{company} ............................ companies.destroy ΓÇ║ Api\CompanyController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-addresses ................... company-addresses.index ΓÇ║ Api\CompanyAddressController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-addresses ................... company-addresses.store ΓÇ║ Api\CompanyAddressController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-addresses/{company_address} ... company-addresses.show ΓÇ║ Api\CompanyAddressController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-addresses/{company_address} company-addresses.update ΓÇ║ Api\CompanyAddressController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-addresses/{company_address} company-addresses.destroy ΓÇ║ Api\CompanyAddressController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-branches ...................... company-branches.index ΓÇ║ Api\CompanyBranchController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-branches ...................... company-branches.store ΓÇ║ Api\CompanyBranchController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-branches/{company_branch} ....... company-branches.show ΓÇ║ Api\CompanyBranchController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-branches/{company_branch} ... company-branches.update ΓÇ║ Api\CompanyBranchController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-branches/{company_branch} . company-branches.destroy ΓÇ║ Api\CompanyBranchController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-contacts ..................... company-contacts.index ΓÇ║ Api\CompanyContactController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-contacts ..................... company-contacts.store ΓÇ║ Api\CompanyContactController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-contacts/{company_contact} ..... company-contacts.show ΓÇ║ Api\CompanyContactController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-contacts/{company_contact} . company-contacts.update ΓÇ║ Api\CompanyContactController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-contacts/{company_contact} company-contacts.destroy ΓÇ║ Api\CompanyContactController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-devices ........................ company-devices.index ΓÇ║ Api\CompanyDeviceController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-devices ........................ company-devices.store ΓÇ║ Api\CompanyDeviceController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-devices/{company_device} ......... company-devices.show ΓÇ║ Api\CompanyDeviceController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-devices/{company_device} ..... company-devices.update ΓÇ║ Api\CompanyDeviceController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-devices/{company_device} ... company-devices.destroy ΓÇ║ Api\CompanyDeviceController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-limit-overrides . company-limit-overrides.index ΓÇ║ Api\CompanyLimitOverrideController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-limit-overrides . company-limit-overrides.store ΓÇ║ Api\CompanyLimitOverrideController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-limit-overrides/{company_limit_override} company-limit-overrides.show ΓÇ║ Api\CompanyLimitOverrideController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-limit-overrides/{company_limit_override} company-limit-overrides.update ΓÇ║ Api\CompanyLimitOverrideController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-limit-overrides/{company_limit_override} company-limit-overrides.destroy ΓÇ║ Api\CompanyLimitOverrideController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-payment-gateways ..................... Api\Phase8GatewayController@configureCompanyGateway
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-settings ..................... company-settings.index ΓÇ║ Api\CompanySettingController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-settings ..................... company-settings.store ΓÇ║ Api\CompanySettingController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-settings/{company_setting} ..... company-settings.show ΓÇ║ Api\CompanySettingController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-settings/{company_setting} . company-settings.update ΓÇ║ Api\CompanySettingController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-settings/{company_setting} company-settings.destroy ΓÇ║ Api\CompanySettingController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-status-history ... company-status-history.index ΓÇ║ Api\CompanyStatusHistoryController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-status-history ... company-status-history.store ΓÇ║ Api\CompanyStatusHistoryController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-status-history/{company_status_history} company-status-history.show ΓÇ║ Api\CompanyStatusHistoryController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-status-history/{company_status_history} company-status-history.update ΓÇ║ Api\CompanyStatusHistoryController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-status-history/{company_status_history} company-status-history.destroy ΓÇ║ Api\CompanyStatusHistoryController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-subscription-addons company-subscription-addons.index ΓÇ║ Api\CompanySubscriptionAddonController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-subscription-addons company-subscription-addons.store ΓÇ║ Api\CompanySubscriptionAddonController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-subscription-addons/{company_subscription_addon} company-subscription-addons.show ΓÇ║ Api\CompanySubscriptionAddonController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-subscription-addons/{company_subscription_addon} company-subscription-addons.update ΓÇ║ Api\CompanySubscriptionAddonController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-subscription-addons/{company_subscription_addon} company-subscription-addons.destroy ΓÇ║ Api\CompanySubscriptionAddonController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-subscriptions ...... company-subscriptions.index ΓÇ║ Api\CompanySubscriptionController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-subscriptions ...... company-subscriptions.store ΓÇ║ Api\CompanySubscriptionController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-subscriptions/{company_subscription} company-subscriptions.show ΓÇ║ Api\CompanySubscriptionController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-subscriptions/{company_subscription} company-subscriptions.update ΓÇ║ Api\CompanySubscriptionController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-subscriptions/{company_subscription} company-subscriptions.destroy ΓÇ║ Api\CompanySubscriptionController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-tax-settings .......... company-tax-settings.index ΓÇ║ Api\CompanyTaxSettingController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-tax-settings .......... company-tax-settings.store ΓÇ║ Api\CompanyTaxSettingController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-tax-settings/{company_tax_setting} company-tax-settings.show ΓÇ║ Api\CompanyTaxSettingController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-tax-settings/{company_tax_setting} company-tax-settings.update ΓÇ║ Api\CompanyTaxSettingController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-tax-settings/{company_tax_setting} company-tax-settings.destroy ΓÇ║ Api\CompanyTaxSettingController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-terminals .................. company-terminals.index ΓÇ║ Api\CompanyTerminalController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-terminals .................. company-terminals.store ΓÇ║ Api\CompanyTerminalController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-terminals/{company_terminal} . company-terminals.show ΓÇ║ Api\CompanyTerminalController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-terminals/{company_terminal} company-terminals.update ΓÇ║ Api\CompanyTerminalController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-terminals/{company_terminal} company-terminals.destroy ΓÇ║ Api\CompanyTerminalController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-users .............................. company-users.index ΓÇ║ Api\CompanyUserController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-users .............................. company-users.store ΓÇ║ Api\CompanyUserController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-users/{company_user} ................. company-users.show ΓÇ║ Api\CompanyUserController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-users/{company_user} ............. company-users.update ΓÇ║ Api\CompanyUserController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-users/{company_user} ........... company-users.destroy ΓÇ║ Api\CompanyUserController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-warehouses ............... company-warehouses.index ΓÇ║ Api\CompanyWarehouseController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/company-warehouses ............... company-warehouses.store ΓÇ║ Api\CompanyWarehouseController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company-warehouses/{company_warehouse} company-warehouses.show ΓÇ║ Api\CompanyWarehouseController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/company-warehouses/{company_warehouse} company-warehouses.update ΓÇ║ Api\CompanyWarehouseController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/company-warehouses/{company_warehouse} company-warehouses.destroy ΓÇ║ Api\CompanyWarehouseController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/company/branches .............................................. Api\Company\BranchController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  POST            api/company/branches .............................................. Api\Company\BranchController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  GET|HEAD        api/company/branches/{id} .......................................... Api\Company\BranchController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  PUT             api/company/branches/{id} ........................................ Api\Company\BranchController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  PATCH           api/company/branches/{id} ........................................ Api\Company\BranchController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  DELETE          api/company/branches/{id} ....................................... Api\Company\BranchController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  POST            api/company/login .................................................... Api\CompanyAuthController@login
+                  Γçé api
+  POST            api/company/logout .................................................. Api\CompanyAuthController@logout
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+  GET|HEAD        api/company/support/tickets ........................................... CompanySupportController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  POST            api/company/support/tickets ........................................... CompanySupportController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  GET|HEAD        api/company/support/tickets/{uuid} ..................................... CompanySupportController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  POST            api/company/support/tickets/{uuid}/attachments ............. CompanySupportController@uploadAttachment
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  GET|HEAD        api/company/support/tickets/{uuid}/attachments/{attachmentUuid} CompanySupportController@downloadAttachment
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  POST            api/company/support/tickets/{uuid}/messages ........................... CompanySupportController@reply
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  POST            api/company/support/tickets/{uuid}/rating ...................... CompanySupportController@submitRating
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  POST            api/company/support/tickets/{uuid}/reopen ............................ CompanySupportController@reopen
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureTenant
+  GET|HEAD        api/countries ............................................................ Api\CountryController@index
+                  Γçé api
+  GET|HEAD        api/countries/{country} ................................................... Api\CountryController@show
+                  Γçé api
+  GET|HEAD        api/currencies .......................................................... Api\CurrencyController@index
+                  Γçé api
+  GET|HEAD        api/currencies/{currency} ................................................ Api\CurrencyController@show
+                  Γçé api
+  GET|HEAD        api/ecr/providers ............................................... Api\Phase9EcrController@getProviders
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/ecr/terminals ............................................... Api\Phase9EcrController@getTerminals
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/ecr/terminals ................................................ Api\Phase9EcrController@mapTerminal
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/feature-flags .............................. feature-flags.index ΓÇ║ Api\FeatureFlagController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/feature-flags .............................. feature-flags.store ΓÇ║ Api\FeatureFlagController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/feature-flags/{feature_flag} ................. feature-flags.show ΓÇ║ Api\FeatureFlagController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/feature-flags/{feature_flag} ............. feature-flags.update ΓÇ║ Api\FeatureFlagController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/feature-flags/{feature_flag} ........... feature-flags.destroy ΓÇ║ Api\FeatureFlagController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/invoices ............................................... Api\Phase7BillingController@indexInvoices
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/invoices ................................................ Api\Phase7BillingController@storeInvoice
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/invoices/{id} ............................................ Api\Phase7BillingController@showInvoice
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/notifications ............................................ Api\Phase11NotificationController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/notifications/{id}/read ............................... Api\Phase11NotificationController@markRead
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/payment-gateways ............................................... Api\Phase8GatewayController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/payments ............................................... Api\Phase7BillingController@recordPayment
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admin-login-logs platform-admin-login-logs.index ΓÇ║ Api\PlatformAdminLoginLogController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-admin-login-logs platform-admin-login-logs.store ΓÇ║ Api\PlatformAdminLoginLogController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admin-login-logs/{platform_admin_login_log} platform-admin-login-logs.show ΓÇ║ Api\PlatformAdminLoginLogController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-admin-login-logs/{platform_admin_login_log} platform-admin-login-logs.update ΓÇ║ Api\PlatformAdminLoginLogController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-admin-login-logs/{platform_admin_login_log} platform-admin-login-logs.destroy ΓÇ║ Api\PlatformAdminLoginLogController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admin-roles .......... platform-admin-roles.index ΓÇ║ Api\PlatformAdminRoleController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-admin-roles .......... platform-admin-roles.store ΓÇ║ Api\PlatformAdminRoleController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admin-roles/{platform_admin_role} platform-admin-roles.show ΓÇ║ Api\PlatformAdminRoleController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-admin-roles/{platform_admin_role} platform-admin-roles.update ΓÇ║ Api\PlatformAdminRoleController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-admin-roles/{platform_admin_role} platform-admin-roles.destroy ΓÇ║ Api\PlatformAdminRoleController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admin-sessions . platform-admin-sessions.index ΓÇ║ Api\PlatformAdminSessionController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-admin-sessions . platform-admin-sessions.store ΓÇ║ Api\PlatformAdminSessionController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admin-sessions/{platform_admin_session} platform-admin-sessions.show ΓÇ║ Api\PlatformAdminSessionController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-admin-sessions/{platform_admin_session} platform-admin-sessions.update ΓÇ║ Api\PlatformAdminSessionController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-admin-sessions/{platform_admin_session} platform-admin-sessions.destroy ΓÇ║ Api\PlatformAdminSessionController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admin-user-roles platform-admin-user-roles.index ΓÇ║ Api\PlatformAdminUserRoleController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-admin-user-roles platform-admin-user-roles.store ΓÇ║ Api\PlatformAdminUserRoleController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admin-user-roles/{platform_admin_user_role} platform-admin-user-roles.show ΓÇ║ Api\PlatformAdminUserRoleController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-admin-user-roles/{platform_admin_user_role} platform-admin-user-roles.update ΓÇ║ Api\PlatformAdminUserRoleController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-admin-user-roles/{platform_admin_user_role} platform-admin-user-roles.destroy ΓÇ║ Api\PlatformAdminUserRoleController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admins ........................ platform-admins.index ΓÇ║ Api\PlatformAdminController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-admins ........................ platform-admins.store ΓÇ║ Api\PlatformAdminController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-admins/{platform_admin} ......... platform-admins.show ΓÇ║ Api\PlatformAdminController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-admins/{platform_admin} ..... platform-admins.update ΓÇ║ Api\PlatformAdminController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-admins/{platform_admin} ... platform-admins.destroy ΓÇ║ Api\PlatformAdminController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-configs ..................... platform-configs.index ΓÇ║ Api\PlatformConfigController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-configs ..................... platform-configs.store ΓÇ║ Api\PlatformConfigController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-configs/{platform_config} ..... platform-configs.show ΓÇ║ Api\PlatformConfigController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-configs/{platform_config} . platform-configs.update ΓÇ║ Api\PlatformConfigController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-configs/{platform_config} platform-configs.destroy ΓÇ║ Api\PlatformConfigController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-features .................. platform-features.index ΓÇ║ Api\PlatformFeatureController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-features .................. platform-features.store ΓÇ║ Api\PlatformFeatureController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-features/{platform_feature} . platform-features.show ΓÇ║ Api\PlatformFeatureController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-features/{platform_feature} platform-features.update ΓÇ║ Api\PlatformFeatureController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-features/{platform_feature} platform-features.destroy ΓÇ║ Api\PlatformFeatureController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-modules ..................... platform-modules.index ΓÇ║ Api\PlatformModuleController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-modules ..................... platform-modules.store ΓÇ║ Api\PlatformModuleController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-modules/{platform_module} ..... platform-modules.show ΓÇ║ Api\PlatformModuleController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-modules/{platform_module} . platform-modules.update ΓÇ║ Api\PlatformModuleController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-modules/{platform_module} platform-modules.destroy ΓÇ║ Api\PlatformModuleController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-permissions ......... platform-permissions.index ΓÇ║ Api\PlatformPermissionController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-permissions ......... platform-permissions.store ΓÇ║ Api\PlatformPermissionController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-permissions/{platform_permission} platform-permissions.show ΓÇ║ Api\PlatformPermissionController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-permissions/{platform_permission} platform-permissions.update ΓÇ║ Api\PlatformPermissionController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-permissions/{platform_permission} platform-permissions.destroy ΓÇ║ Api\PlatformPermissionController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-role-permissions platform-role-permissions.index ΓÇ║ Api\PlatformRolePermissionController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-role-permissions platform-role-permissions.store ΓÇ║ Api\PlatformRolePermissionController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-role-permissions/{platform_role_permission} platform-role-permissions.show ΓÇ║ Api\PlatformRolePermissionController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-role-permissions/{platform_role_permission} platform-role-permissions.update ΓÇ║ Api\PlatformRolePermissionController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-role-permissions/{platform_role_permission} platform-role-permissions.destroy ΓÇ║ Api\PlatformRolePermissionController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-settings .................. platform-settings.index ΓÇ║ Api\PlatformSettingController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/platform-settings .................. platform-settings.store ΓÇ║ Api\PlatformSettingController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/platform-settings/{platform_setting} . platform-settings.show ΓÇ║ Api\PlatformSettingController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/platform-settings/{platform_setting} platform-settings.update ΓÇ║ Api\PlatformSettingController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/platform-settings/{platform_setting} platform-settings.destroy ΓÇ║ Api\PlatformSettingController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-addons ............ subscription-addons.index ΓÇ║ Api\SubscriptionAddonController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-addons ............ subscription-addons.store ΓÇ║ Api\SubscriptionAddonController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-addons/{subscription_addon} subscription-addons.show ΓÇ║ Api\SubscriptionAddonController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-addons/{subscription_addon} subscription-addons.update ΓÇ║ Api\SubscriptionAddonController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-addons/{subscription_addon} subscription-addons.destroy ΓÇ║ Api\SubscriptionAddonController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-changes ......... subscription-changes.index ΓÇ║ Api\SubscriptionChangeController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-changes ......... subscription-changes.store ΓÇ║ Api\SubscriptionChangeController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-changes/{subscription_change} subscription-changes.show ΓÇ║ Api\SubscriptionChangeController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-changes/{subscription_change} subscription-changes.update ΓÇ║ Api\SubscriptionChangeController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-changes/{subscription_change} subscription-changes.destroy ΓÇ║ Api\SubscriptionChangeController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-grace-periods subscription-grace-periods.index ΓÇ║ Api\SubscriptionGracePeriodController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-grace-periods subscription-grace-periods.store ΓÇ║ Api\SubscriptionGracePeriodController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-grace-periods/{subscription_grace_period} subscription-grace-periods.show ΓÇ║ Api\SubscriptionGracePeriodController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-grace-periods/{subscription_grace_period} subscription-grace-periods.update ΓÇ║ Api\SubscriptionGracePeriodController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-grace-periods/{subscription_grace_period} subscription-grace-periods.destroy ΓÇ║ Api\SubscriptionGracePeriodController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-limit-snapshots subscription-limit-snapshots.index ΓÇ║ Api\SubscriptionLimitSnapshotController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-limit-snapshots subscription-limit-snapshots.store ΓÇ║ Api\SubscriptionLimitSnapshotController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-limit-snapshots/{subscription_limit_snapshot} subscription-limit-snapshots.show ΓÇ║ Api\SubscriptionLimitSnapshotController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-limit-snapshots/{subscription_limit_snapshot} subscription-limit-snapshots.update ΓÇ║ Api\SubscriptionLimitSnapshotController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-limit-snapshots/{subscription_limit_snapshot} subscription-limit-snapshots.destroy ΓÇ║ Api\SubscriptionLimitSnapshotController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-plan-features subscription-plan-features.index ΓÇ║ Api\SubscriptionPlanFeatureController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-plan-features subscription-plan-features.store ΓÇ║ Api\SubscriptionPlanFeatureController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-plan-features/{subscription_plan_feature} subscription-plan-features.show ΓÇ║ Api\SubscriptionPlanFeatureController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-plan-features/{subscription_plan_feature} subscription-plan-features.update ΓÇ║ Api\SubscriptionPlanFeatureController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-plan-features/{subscription_plan_feature} subscription-plan-features.destroy ΓÇ║ Api\SubscriptionPlanFeatureController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-plan-limits subscription-plan-limits.index ΓÇ║ Api\SubscriptionPlanLimitController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-plan-limits subscription-plan-limits.store ΓÇ║ Api\SubscriptionPlanLimitController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-plan-limits/{subscription_plan_limit} subscription-plan-limits.show ΓÇ║ Api\SubscriptionPlanLimitController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-plan-limits/{subscription_plan_limit} subscription-plan-limits.update ΓÇ║ Api\SubscriptionPlanLimitController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-plan-limits/{subscription_plan_limit} subscription-plan-limits.destroy ΓÇ║ Api\SubscriptionPlanLimitController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-plan-modules subscription-plan-modules.index ΓÇ║ Api\SubscriptionPlanModuleController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-plan-modules subscription-plan-modules.store ΓÇ║ Api\SubscriptionPlanModuleController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-plan-modules/{subscription_plan_module} subscription-plan-modules.show ΓÇ║ Api\SubscriptionPlanModuleController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-plan-modules/{subscription_plan_module} subscription-plan-modules.update ΓÇ║ Api\SubscriptionPlanModuleController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-plan-modules/{subscription_plan_module} subscription-plan-modules.destroy ΓÇ║ Api\SubscriptionPlanModuleController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-plans ............... subscription-plans.index ΓÇ║ Api\SubscriptionPlanController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-plans ............... subscription-plans.store ΓÇ║ Api\SubscriptionPlanController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-plans/{subscription_plan} subscription-plans.show ΓÇ║ Api\SubscriptionPlanController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-plans/{subscription_plan} subscription-plans.update ΓÇ║ Api\SubscriptionPlanController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-plans/{subscription_plan} subscription-plans.destroy ΓÇ║ Api\SubscriptionPlanController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-trials ............ subscription-trials.index ΓÇ║ Api\SubscriptionTrialController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-trials ............ subscription-trials.store ΓÇ║ Api\SubscriptionTrialController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-trials/{subscription_trial} subscription-trials.show ΓÇ║ Api\SubscriptionTrialController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-trials/{subscription_trial} subscription-trials.update ΓÇ║ Api\SubscriptionTrialController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-trials/{subscription_trial} subscription-trials.destroy ΓÇ║ Api\SubscriptionTrialController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-usage .............. subscription-usage.index ΓÇ║ Api\SubscriptionUsageController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-usage .............. subscription-usage.store ΓÇ║ Api\SubscriptionUsageController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-usage-logs . subscription-usage-logs.index ΓÇ║ Api\SubscriptionUsageLogController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/subscription-usage-logs . subscription-usage-logs.store ΓÇ║ Api\SubscriptionUsageLogController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-usage-logs/{subscription_usage_log} subscription-usage-logs.show ΓÇ║ Api\SubscriptionUsageLogController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-usage-logs/{subscription_usage_log} subscription-usage-logs.update ΓÇ║ Api\SubscriptionUsageLogController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-usage-logs/{subscription_usage_log} subscription-usage-logs.destroy ΓÇ║ Api\SubscriptionUsageLogController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/subscription-usage/{subscription_usage} subscription-usage.show ΓÇ║ Api\SubscriptionUsageController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/subscription-usage/{subscription_usage} subscription-usage.update ΓÇ║ Api\SubscriptionUsageController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/subscription-usage/{subscription_usage} subscription-usage.destroy ΓÇ║ Api\SubscriptionUsageController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/audit-logs .................................... SuperAdminSecurityController@auditLogs
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/super-admin/login .......................................... Api\PlatformAdminAuthController@login
+                  Γçé api
+  POST            api/super-admin/logout ........................................ Api\PlatformAdminAuthController@logout
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+  GET|HEAD        api/super-admin/security/audit-logs ........................... SuperAdminSecurityController@auditLogs
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/security/dashboard ............................ SuperAdminSecurityController@dashboard
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/security/events .................................. SuperAdminSecurityController@events
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/security/events/{uuid} ........................ SuperAdminSecurityController@showEvent
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT             api/super-admin/security/events/{uuid}/assign ............... SuperAdminSecurityController@assignEvent
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/super-admin/security/events/{uuid}/resolve ............. SuperAdminSecurityController@resolveEvent
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT             api/super-admin/security/events/{uuid}/status ......... SuperAdminSecurityController@updateEventStatus
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/security/login-history ..................... SuperAdminSecurityController@loginHistory
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/security/sessions .............................. SuperAdminSecurityController@sessions
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/super-admin/security/sessions/{uuid} .................. SuperAdminSecurityController@revokeSession
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/security/settings ...................... SuperAdminSecurityController@securitySettings
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT             api/super-admin/security/settings ................ SuperAdminSecurityController@updateSecuritySettings
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/security/tokens .................................. SuperAdminSecurityController@tokens
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/super-admin/security/tokens/{id} ........................ SuperAdminSecurityController@revokeToken
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/security/two-factor ..................... SuperAdminSecurityController@twoFactorStatus
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/support/reports .................................. SuperAdminSupportController@reports
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/support/tickets .................................... SuperAdminSupportController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/support/tickets/{uuid} .............................. SuperAdminSupportController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT             api/super-admin/support/tickets/{uuid}/assign ..................... SuperAdminSupportController@assign
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/super-admin/support/tickets/{uuid}/attachments/{attachmentUuid} SuperAdminSupportController@downloadAttachment
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/super-admin/support/tickets/{uuid}/internal-notes .... SuperAdminSupportController@addInternalNote
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/super-admin/support/tickets/{uuid}/messages .................... SuperAdminSupportController@reply
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT             api/super-admin/support/tickets/{uuid}/priority ........... SuperAdminSupportController@updatePriority
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT             api/super-admin/support/tickets/{uuid}/status ............... SuperAdminSupportController@updateStatus
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/username-rules ........................... username-rules.index ΓÇ║ Api\UsernameRuleController@index
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  POST            api/username-rules ........................... username-rules.store ΓÇ║ Api\UsernameRuleController@store
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  GET|HEAD        api/username-rules/{username_rule} ............. username-rules.show ΓÇ║ Api\UsernameRuleController@show
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  PUT|PATCH       api/username-rules/{username_rule} ......... username-rules.update ΓÇ║ Api\UsernameRuleController@update
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+  DELETE          api/username-rules/{username_rule} ....... username-rules.destroy ΓÇ║ Api\UsernameRuleController@destroy
+                  Γçé api
+                  Γçé Illuminate\Auth\Middleware\Authenticate:sanctum
+                  Γçé App\Http\Middleware\EnsureSuperAdmin
+
+                                                                                                    Showing [250] routes
+

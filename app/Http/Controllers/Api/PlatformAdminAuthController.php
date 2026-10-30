@@ -1,0 +1,168 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use App\Models\PlatformAdmin;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Validator;
+
+class PlatformAdminAuthController extends Controller
+{
+    /**
+     * Authenticate a platform administrator with Super Admin access.
+     */
+    public function login(Request $request): JsonResponse
+    {
+        $validator = Validator::make($request->all(), [
+            'username' => ['required', 'string', 'max:255'],
+            'password' => ['required', 'string', 'max:255'],
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'message' => 'Validation failed.',
+                'errors' => $validator->errors(),
+            ], 422);
+        }
+
+        $identifier = trim((string) $request->input('username'));
+        $password = (string) $request->input('password');
+
+        $admin = PlatformAdmin::query()
+            ->where(function ($query) use ($identifier) {
+                $query->where('username', $identifier)
+                    ->orWhere('email', $identifier);
+            })
+            ->first();
+
+        if (!$admin) {
+            return response()->json([
+                'message' => 'Invalid username or password.',
+            ], 401);
+        }
+
+        if (strtoupper((string) $admin->status) !== 'ACTIVE') {
+            return response()->json([
+                'message' => 'This administrator account is inactive.',
+            ], 403);
+        }
+
+        if (
+            $admin->locked_until !== null &&
+            $admin->locked_until->isFuture()
+        ) {
+            return response()->json([
+                'message' => 'This account is temporarily locked.',
+            ], 423);
+        }
+
+        if (
+            empty($admin->password_hash) ||
+            !Hash::check($password, $admin->password_hash)
+        ) {
+            return response()->json([
+                'message' => 'Invalid username or password.',
+            ], 401);
+        }
+
+        if (!$admin->hasSuperAdminRole()) {
+            return response()->json([
+                'message' => 'This account does not have Super Admin access.',
+            ], 403);
+        }
+
+        try {
+            $admin->forceFill([
+                'failed_login_attempts' => 0,
+                'locked_until' => null,
+                'last_login_at' => now(),
+            ])->save();
+
+            $token = $admin->createToken(
+                'retailpos-super-admin'
+            )->plainTextToken;
+        } catch (\Throwable $exception) {
+            Log::error('Super Admin authentication failed internally.', [
+                'admin_id' => $admin->id,
+                'exception' => $exception->getMessage(),
+            ]);
+
+            return response()->json([
+                'message' => 'Unable to complete login. Please try again.',
+            ], 500);
+        }
+
+        // Record login activity. Adjust these fields if your migration
+        // defines different column names.
+        
+try {
+    DB::table('platform_admin_login_logs')->insert([
+        'admin_id' => $admin->id,
+        'username' => $admin->username,
+        'login_status' => 'SUCCESS',
+        'ip_address' => $request->ip(),
+        'user_agent' => substr(
+            (string) $request->userAgent(),
+            0,
+            1000
+        ),
+        'failure_reason' => null,
+        'logged_at' => now(),
+    ]);
+} catch (\Throwable $exception) {
+    Log::warning('Super Admin login audit record could not be saved.', [
+        'admin_id' => $admin->id,
+        'error' => $exception->getMessage(),
+    ]);
+}
+
+
+        return response()->json([
+            'message' => 'Login successful.',
+            'token' => $token,
+            'token_type' => 'Bearer',
+            'admin' => [
+                'id' => $admin->id,
+                'uuid' => $admin->uuid,
+                'username' => $admin->username,
+                'email' => $admin->email,
+                'first_name' => $admin->first_name,
+                'last_name' => $admin->last_name,
+                'status' => $admin->status,
+            ],
+        ], 200);
+    }
+
+    /**
+     * Revoke the current Sanctum access token.
+     */
+    public function logout(Request $request): JsonResponse
+    {
+        $admin = $request->user();
+
+        if (!$admin instanceof PlatformAdmin) {
+            return response()->json([
+                'message' => 'Unauthenticated.',
+            ], 401);
+        }
+
+        $token = $admin->currentAccessToken();
+
+        if ($token === null || !method_exists($token, 'delete')) {
+            return response()->json([
+                'message' => 'No revocable access token was found.',
+            ], 400);
+        }
+
+        $token->delete();
+
+        return response()->json([
+            'message' => 'Logout successful.',
+        ], 200);
+    }
+}

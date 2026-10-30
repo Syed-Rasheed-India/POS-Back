@@ -1,0 +1,52 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+class Phase8GatewayController extends Controller
+{
+    public function index(Request $request)
+    {
+        $gateways = DB::table('payment_gateways')
+            ->select([
+                'id',
+                'gateway_code',
+                'gateway_name',
+                'provider',
+                'gateway_type',
+                'is_active',
+                'sort_order',
+            ])
+            ->orderBy('sort_order')
+            ->orderBy('id')
+            ->get()
+            ->map(function ($gateway) {
+                return [
+                    'id' => $gateway->id,
+                    'name' => $gateway->gateway_name,
+                    'gateway_code' => $gateway->gateway_code,
+                    'provider' => $gateway->provider,
+                    'gateway_type' => $gateway->gateway_type,
+                    'is_active' => (bool) $gateway->is_active,
+                    'sort_order' => $gateway->sort_order,
+                ];
+            });
+
+        return response()->json([
+            'success' => true,
+            'data' => $gateways,
+        ]);
+    }
+
+    public function configureCompanyGateway(Request $request)
+    {
+        return response()->json([
+            'success' => true,
+            'message' => 'Payment gateway configured successfully',
+            'data' => $request->all()
+        ]);
+    }
+}
